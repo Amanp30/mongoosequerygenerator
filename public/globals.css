@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+div#__next {
+    margin-bottom: 6em;
+}
+
+.logo {
+    padding: 2em 3em;
+}
+
+.developer {
+    padding: 0 3em;
+    line-height: 1.6;
+    text-align: center;
+}
+
+span.red {
+    color: red;
+}
+.sortfield {
+    padding: 1em 3em;
+    background: #ff000030;
+}
+
+code#codethis {
+    display: flex;margin:
+     2em;background: black;
+     font-size: 1.4em;
+     color: white;
+     padding: 4em;
+     line-height: 1.6;
+    letter-spacing: .1em;
+     border-radius: 1em;
+     box-shadow: 0 0 6px 5px gainsboro;
+    }
+
+.codediv {
+    position: relative;
+}
+.showerror {
+    padding: 3em;
+    display: flex;
+    height: 50vh;
+}
+.copycode {
+    position: absolute;
+    color: white;
+    top: 5%;
+    right: 5%;
+}
+
+svg.w-4.h-4.pointer-events-none.copy-code-icon.text-white {
+    height: 2em;
+    cursor: pointer;
+    width: 2em;
+}
+
+.copycode {
+    border: 1px solid white;
+    margin: 0;
+    padding: 6px;
+    border-radius: .6em;
+}
+
+.ffg {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2em;
+    width: 250px;
+}
+
+.controls {
+    display: flex;
+    align-items: end;
+}
+
+.innergroup {position: relative;}
+
+button {
+    position: absolute;
+    right: 0;
+    background: green;
+    color: white;
+    padding: 1em;
+    border: 2px solid green;
+}
+
+input[type="text"], select,input[type="number"] {
+    padding: 1em;
+}
+
+.ffg label {
+    margin-bottom: .6em;
+}
+
+.controls {
+    padding: 2em 3em;
+}
+
+@media (max-width: 600px) {
+    .controls {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2em;
+    width: 100%;
+}
+
+.ffg {
+    width: 100%;
+}
+code#codethis {
+    display: block;
+    background: black;
+    margin: 0;
+    font-size: .8em;
+    color: white;
+    padding: 2em;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    border-radius: 1em;
+    box-shadow: 0 0 6px 5px gainsboro;
+}
+svg.w-4.h-4.pointer-events-none.copy-code-icon.text-white {
+    height: 1em;
+    width: 1em;
+}
+.controls {
+    align-items: start;
+}
+input[type="text"] {
+    width: 100%;
+}
+}
