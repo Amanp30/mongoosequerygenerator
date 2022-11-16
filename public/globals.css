@@ -5,6 +5,10 @@
     font-family:sans-serif;
 }
 
+code#codethis {
+    overflow-y: auto;
+}
+
 div#__next {
     margin-bottom: 6em;
 }
