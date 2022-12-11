@@ -88,6 +88,7 @@ const mongoosequery = () => {
                   <input
                     type="text"
                     value={iscookieset}
+                    name="modelname"
                     onChange={(e) => setiscookieset(e.target.value)}
                   />{" "}
                   <button onClick={updatemodel}>Update Model</button>
@@ -102,6 +103,7 @@ const mongoosequery = () => {
                   <input
                     type="text"
                     value={modelname}
+                    name="setcookie"
                     onChange={(e) => setmodelname(e.target.value)}
                   />
                   <button onClick={themodel}> Save Model</button>
@@ -113,7 +115,7 @@ const mongoosequery = () => {
           {/* model name end */}
           <div className="ffg">
             <label htmlFor="Query">Query</label>
-            <select onChange={(e) => selection(e)} value={selected}>
+            <select name="Query" onChange={(e) => selection(e)} value={selected}>
               <option value="save">Save</option>
               <option value="find">Find</option>
               <option value="findbyid">FindById</option>
@@ -143,10 +145,11 @@ const mongoosequery = () => {
             <>
               {" "}
               <div className="ffg">
-                <label htmlFor="field Name">Field Name</label>
+                <label htmlFor="fieldname">Field Name</label>
                 <input
                   type="text"
                   value={fieldname}
+                  name="fieldname"
                   onChange={(e) => setfieldname(e.target.value)}
                 />{" "}
               </div>
@@ -164,10 +167,11 @@ const mongoosequery = () => {
             <>
               {" "}
               <div className="ffg">
-                <label htmlFor="field value">Field Value</label>
+                <label htmlFor="fieldvalue">Field Value</label>
                 <input
                   type="text"
                   value={fieldvalue}
+                  name="fieldvalue"
                   onChange={(e) => setfieldvalue(e.target.value)}
                 />{" "}
               </div>
@@ -181,10 +185,11 @@ const mongoosequery = () => {
             <>
               {" "}
               <div className="ffg">
-                <label htmlFor="update Name">Update Field</label>
+                <label htmlFor="updatename">Update Field</label>
                 <input
                   type="text"
                   value={updatefield}
+                  name="updatename"
                   onChange={(e) => setupdatefield(e.target.value)}
                 />{" "}
               </div>
@@ -198,10 +203,11 @@ const mongoosequery = () => {
             <>
               {" "}
               <div className="ffg">
-                <label htmlFor="update value">Update Value</label>
+                <label htmlFor="updatevalue">Update Value</label>
                 <input
                   type="text"
                   value={updatevalue}
+                  name="updatevalue"
                   onChange={(e) => setupdatevalue(e.target.value)}
                 />{" "}
               </div>
@@ -216,6 +222,7 @@ const mongoosequery = () => {
                 <input
                   type="number"
                   value={limit}
+                  name="limits"
                   onChange={(e) => setlimit(e.target.value)}
                 />
               </div>
@@ -227,7 +234,7 @@ const mongoosequery = () => {
               {" "}
               <div className="ffg">
                 <label htmlFor="sort">Sort</label>
-                <select onChange={(e) => setsort(e.target.value)} value={sort}>
+                <select name="sort" onChange={(e) => setsort(e.target.value)} value={sort}>
                   <option value="nosort">Not Sort</option>
                   <option value="sortasc">Ascending</option>
                   <option value="sortdesc">Descindg</option>
