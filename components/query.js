@@ -102,7 +102,7 @@ function query({
               {"var id = req.params.id;" + "\n"}
               {"/* Getting id from url */ " + "\n"}
               {themodelname +
-                `.findByIdAndUpdate(id, {
+                `.findByIdAndUpdate({_id: id}, {
                         ${fieldupdate}: "${valueupdate}",
                     })` +
                 execline}
@@ -137,7 +137,7 @@ function query({
               {`var id = req.params.id;` + "\n"}
               {"/* Getting id from url */ " + "\n"}
 
-              {themodelname + `.findByIdAndDelete(id)` + execline}
+              {themodelname + `.findByIdAndDelete({_id: id})` + execline}
             </code>
           ) : null}
           {/*  findbyidanddelete */}
@@ -146,7 +146,7 @@ function query({
               {`var id = req.params.id;` + "\n"}
               {"/* Getting id from url */ " + "\n"}
 
-              {themodelname + `.findByIdAndRemove(id)` + execline}
+              {themodelname + `.findByIdAndRemove({_id: id})` + execline}
             </code>
           ) : null}
 
